@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown box using html and css and javascripts</title>
+    <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+ <div class="container">
+  <article class="question">
+    <div class="question-header">
+ <div class="question-title">
+    <h3>tell me about your self.</h3>
+ </div>
+ <div class="btns">
+    <span class="plus">+</span>
+    <span class="minus">-</span>
+   </div>
+ </div>
+ <div class="question-info">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Distinctio saepe quaerat beatae deleniti ullam 
+     rem voluptatem optio, id doloribus ea!</p>
+ </div>
+  </article>
+  <article class="question">
+    <div class="question-header">
+ <div class="question-title">
+    <h3>what is your future goal?</h3>
+ </div>
+ <div class="btns">
+    <span class="plus">+</span>
+    <span class="minus">-</span>
+   </div>
+ </div>
+ <div class="question-info">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Distinctio saepe quaerat beatae deleniti ullam 
+     rem voluptatem optio, id doloribus ea!</p>
+ </div>
+ 
+  </article>
+  <article class="question">
+    <div class="question-header">
+ <div class="question-title">
+    <h3>what is your skills?
+    </h3>
+ </div>
+ <div class="btns">
+    <span class="plus">+</span>
+    <span class="minus">-</span>
+   </div>
+ </div>
+ <div class="question-info">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Distinctio saepe quaerat beatae deleniti ullam 
+     rem voluptatem optio, id doloribus ea!</p>
+ </div>
+ 
+  </article>
+  <article class="question">
+    <div class="question-header">
+ <div class="question-title">
+    <h3>what is your favourate game?</h3>
+ </div>
+ <div class="btns">
+    <span class="plus">+</span>
+    <span class="minus">-</span>
+   </div>
+ </div>
+ <div class="question-info">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Distinctio saepe quaerat beatae deleniti ullam 
+     rem voluptatem optio, id doloribus ea!</p>
+ </div>
+ 
+  </article>
+ </div> 
+ <!-- add javascripts part in html  -->
+ <script>
+    let questioninfo = document.querySelector(".question-info");
+    let btns = document.querySelectorAll(".btns");
+    btns.forEach(function(btn){
+        btn.addEventListener('click',function(e){
+            const ath = e.currentTarget.parentElement.parentElement;
+            ath.classList.toggle('showtext');
+        })
+    })
+ </script> 
+   <!--end of javascripts part in html  -->
+</body>
+</html>

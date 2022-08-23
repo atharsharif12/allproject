@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(244, 252, 252);
+    min-height: 100vh;
+}
+.hh{
+    color: red;
+    font-size: 1.9em;
+    text-shadow: 1px 1px 1px  white;
+}
+.navbar{
+    height: auto;
+    width: 100%;
+    background-color: rgb(32, 31, 31);
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.9em 0em;
+    font-family: sans-serif;
+}
+#menu{
+   font-size: 2em;
+   padding-bottom: 0.2em;
+    width: 50px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid red;
+}
+/* now add sidebar style  */
+.sidenavbar{
+    position: absolute;
+    top: 0px;
+    z-index: 111;
+    transform: translateX(-500px);
+    transition: 0.9s;
+    width: 400px;
+    min-height: 100vh;
+    text-transform: uppercase;
+    background-color: wheat;
+}
+.sidenavbar #cross{
+    position: absolute;
+    font-size: 3em;
+    top: 10px;
+    border: 2px solid red;
+    width: 40px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    right: 10px;
+}
+.mainul{
+    margin-top: 7em;
+    height: 100%;
+    width: 100%;
+    
+}
+.mainul li{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    border: 1px solid gray;
+    cursor: pointer;
+    padding: 0.9em 0em;
+    background-color: black;
+    color: white;
+    list-style: none;
+}
+.mainul li:hover{
+    transition: 0.6s;
+    color: green;
+    background-color: rgb(172, 169, 169);
+    transform: translate(0px, 9px);
+}
+.icon ul{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
+    color: blue;
+    gap: 1.3em;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: sans-serif;
+    justify-content: center;
+}
+.icon ul li{
+    box-shadow: 0px 0px 9px 5px rgb(0, 98, 128);
+}
+/* end of sidebar style */
+
+/* open sidebar nav */
+.showsidebar{
+    transform: translateX(0px);
+    transition: 0.9s;
+}
+/* end of sidebar nav */
+
+/* now add media query to for small screen */
+@media(max-width:560px){
+    .sidenavbar{
+        width: 220px;
+    }
+}

@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.videocontainer{
+    min-height: 100vh;
+    width: 100%;
+}
+video{
+    height: 100vh;
+    min-width: 100%;
+    filter: opacity(0.6);
+    background-color: black;
+    transition: 0.5s;
+}
+.btn{
+    height: 40px;
+    width: 130px;
+    background-color: rgb(21, 21, 21);
+    box-shadow: 0px 0px 5px red;
+    color: white;
+    bottom: 30px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: 1em 0em;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 1;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+.btn span {
+    text-align: center;
+    padding: 0.5em !important;
+}
+.overlay{
+    position: absolute;
+    background-color: aqua;
+    height: 27px;
+    width: 50px;
+    z-index: 11;
+    transform: translateX(0%);
+    transition: 0.5s;
+}
+.overlay1{
+    transform: translateX(100%);
+    transition: 0.4s;
+}

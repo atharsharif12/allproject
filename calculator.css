@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(40, 110, 171);
+}
+.claculatorbox{
+    height: 500px;
+    width: 350px;
+    margin: 1em auto;
+    position: relative;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 10px rgb(0, 128, 83);
+}
+#inputbox{
+    width: 100%;
+    padding: 0.9em 0em;
+    height: 70px;
+    font-size: 1.1em; 
+    border: none;
+    outline: none;
+}
+ [type="button"]{
+  padding: 0.5em;
+  height: 60px;
+  width: 60px;
+  margin: 0.6em;
+  font-weight: 600;
+  font-size: 1.1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+[type="button"]:hover{
+    color:white;
+    background-color: rgb(157, 156, 156);
+    transition: 0.5s;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open model project</title>
+    <link rel="stylesheet" href="openmodel.css">
+</head>
+<body>
+ <div class="container">
+  <div class="modelbox">
+    <button>open model</button>
+  </div>
+ </div> 
+ <div class="showmodel">
+  <span id="cross">&times;</span>
+  <h3>hii welcome to new box.</h3>
+ </div>
+ <script>
+  let modelbox = document.querySelector(".modelbox");
+  let showmodel = document.querySelector(".showmodel");
+  let cross = document.getElementById("cross");
+  let container = document.querySelector(".container");
+  modelbox.addEventListener("click",function(){
+    showmodel.classList.add('displaymodel');
+    container.classList.add('overlay');
+  })
+  cross.addEventListener("click",function(){
+    showmodel.classList.remove('displaymodel');
+    container.classList.remove('overlay');
+  })
+ </script>  
+</body>
+</html>

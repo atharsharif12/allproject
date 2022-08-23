@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>counter app</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .counterbox{
+      height: 400px;
+      width: 400px;
+      background-color: rgb(247, 113, 113);
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      justify-content: center;
+      flex-direction: column;
+      gap: 3em;
+      font-size: 1.4em;
+      margin: 0.9em auto;
+    }
+    .btnn button{
+      margin: 0em 0.3em;
+      width: 90px;
+     height: 40px;
+     font-weight: 500;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    #sp1{
+      color: black;
+      font-size: 1.8em;
+    }
+  </style>
+</head>
+<body>
+<div class="counterbox">
+  <h2>counter</h2>
+  <span id="sp1">0</span>
+  <div class="btnn">
+    <button class="btn increase">increase</button>
+    <button class="btn reset">reset</button>
+    <button class="btn decrease">decrease</button>
+  </div>
+</div>  
+<!-- now add script part -->
+<script>
+  let count = 0;
+  const sp1 = document.getElementById("sp1");
+  const btn = document.querySelectorAll('.btn');
+  btn.forEach(function(btns){
+   btns.addEventListener('click',function(e){
+   const styles =  e.currentTarget.classList;
+   if(styles.contains("increase")){
+    count++;
+    sp1.style.color = 'blue';
+   }
+   else if(styles.contains("decrease")){
+    count--;
+    sp1.style.color = 'red';
+   }
+   else{
+    count = 0;
+    sp1.style.color = 'black';
+   }
+   sp1.textContent = count;
+   })
+  })
+</script>
+</body>
+</html>

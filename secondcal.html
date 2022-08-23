@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="" id="forms">
+   <input type="text" id="inp">
+   <button id="btn">click</button>
+  </form> 
+  <script>
+    let inp = document.getElementById('inp');
+    let btn = document.getElementById('btn');
+    let forms = document.getElementById('forms')
+    btn.addEventListener('click',function(e){
+       e.preventDefault()
+        forms.inp.value +=btn.innerHTML;
+    })
+  </script>
+</body>
+</html>

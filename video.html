@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video project with the help of html and css</title>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+ <div class="videocontainer">
+  <video  loop muted controls id="video1">
+    <source src="videos/vedeo1.mp4" type="video/mp4">
+  </video>
+  <div class="btn">
+   <span id="play">play</span>
+   <span id="pause">pause</span>
+   <span class="overlay"></span>
+  </div>  
+ </div>   
+ <!-- now script tag -->
+
+ <script>
+  const play = document.getElementById('play');
+  const pause = document.getElementById('pause');
+  const video1 = document.getElementById('video1');
+  const overlaybtn = document.querySelector('.overlay');
+
+  pause.addEventListener('click',function(){
+    
+    video1.pause();
+   overlaybtn.classList.add('overlay1');
+
+  })
+  play.addEventListener('click',function(){
+    
+    video1.play();
+   overlaybtn.classList.remove('overlay1');
+
+  })
+
+
+ </script>
+ <!--end of scripts tag  -->
+</body>
+</html>

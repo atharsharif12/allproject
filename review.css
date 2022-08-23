@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.card h3{
+    color: blue;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    border-bottom: 2px solid cyan;
+}
+.card h4{
+    font-weight: 600;
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid red;
+}
+.card p{
+    margin:0.5em 0em;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.container{
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(209, 228, 247);
+    margin-top: 5em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0px 0px 8px 8px gray;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    gap: 0.8em;
+    text-transform: capitalize;
+    line-height: 1.4em;
+    word-spacing: 0.3em;
+    padding: 0.5em;
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+    padding: 0.4em;
+}   
+.but button{
+    margin: 0em 0.7em;
+    padding: 0.4em;
+    text-transform: capitalize;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
