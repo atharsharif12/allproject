@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website designs with the help of html and css and javascripts </title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+
+
+  <!-- add navbar -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <h2>ATHAR <span>SHARIF</span></h2>
+      </div>
+     <ul class="links">
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#service">services</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#project">project</a></li>
+     </ul>
+     <span id="sp1" class="sp2">&#9776;</span>
+    </div>
+    
+  </nav>
+  <!-- end of navbar -->
+    <!-- add home section  -->
+      <section id="home">
+        <div class="righthome">
+          <img src="image/athh.jpg"alt="">
+        </div>
+        <div class="lefthome">
+         <h2>i am Md Athar Sharif</h2>
+         <h3>web-developer and web-designer</h3>
+         <p>i am currently learning and expolore new thing and imporve my skill.
+
+         </p>
+         <button>read more</button>
+       <button>download cv</button>
+        </div>  
+      </section>
+    <!-- end of home section-->
+
+    <!-- now add about section  -->
+
+     <section id="about">
+      <div class="leftabout">
+          <h2>about me</h2>
+        <p>i am fronted developer. i am website designer. learning new thing and expolore
+          the thing.talks about html, css,<br> javascripts,bootstrap,wordpress,c++
+          
+          <br>DS,java.currently i am looking job.
+          <h3>hire me</h3>
+          <span>mail us--: mdatharsharif615@gmail.com</span> 
+        </p>
+
+      </div>
+      <div class="rightabout">
+        <img src="image/b1 (4).jpg" alt="">
+      </div>
+     </section>
+    <!-- end of alearn moretion -->
+  <!-- now add skill part -->
+  <div class="skillcontainer">
+    <h1>my skill</h1>
+    <div class="skillcard">
+      <div class="skill">
+        <h3>html</h3>
+        <div class="ht">90%</div>
+      </div>
+      <div class="skill">
+        <h3>css</h3>
+        <div class="cs">80%</div>
+      </div>
+      <div class="skill">
+        <h3>javascripts</h3>
+        <div class="ja">80%</div>
+      </div>
+      <div class="skill">
+        <h3>bootstrap</h3>
+        <div class="bo">80%</div>
+      </div>
+      <div class="skill">
+        <h3>java</h3>
+        <div class="java">60%</div>
+      </div>
+      <div class="skill">
+        <h3>c++</h3>
+        <div class="c">70%</div>
+      </div>
+      <div class="skill">
+        <h3>wordpress</h3>
+        <div class="wo">65%</div>
+      </div>
+    </div>
+  </div>
+  <!-- end of skill part -->
+  <!-- now add project part -->
+  <div class="projectcontainer" id="project">
+    <h1>My Project</h1>
+    <div class="projectpart">
+      <div class="projectcard">
+        <iframe src="https://atharsharif12.github.io/project/project.html" ></iframe>
+       <h3>retaurant website design</h3>
+      </div>
+      <div class="projectcard">
+        <iframe src="https://atharsharif12.github.io/projectmanager/gym.html" ></iframe>
+       <h3>gym website design</h3>
+      </div>
+      <div class="projectcard">
+        <iframe src="https://atharsharif12.github.io/project/index.html" ></iframe>
+       <h3>portfolio website</h3>
+      </div>
+      <div class="projectcard">
+        <iframe src="https://atharsharif12.github.io/project/project.html" ></iframe>
+       <h3>retaurant website design</h3>
+      </div>
+    </div>
+  </div>
+  <!-- end of project part -->
+  <!-- now add service page  -->
+  <div class="servicecontainer">
+    <h1>My service</h1>
+    <div class="servicecard">
+      <div class="service">
+        <span><i class="fa-brands fa-html5"></i></span>
+        <p>html course for beginner to advanced.</p>
+        <button>learn more</button>
+      </div>
+      <div class="service">
+        <span><i class="fa-brands fa-css3"></i></span>
+        <p>css course for beginner to advanced.</p>
+        <button>learn more</button>
+      </div>
+      <div class="service">
+        <span><i class="fa-brands fa-js"></i></span>
+        <p>javascripts course for beginner to advanced.</p>
+        <button>readmore</button>
+      </div>
+      <div class="service">
+        <span><i class="fa-brands fa-java"></i></span>
+        <p>java course for beginner to advanced.</p>
+        <button>learn more</button>
+      </div>
+      <div class="service">
+        <span><i class="fa-solid fa-c"></i></span>
+        <p>become a c++ expert in just 5 months.</p>
+        <button>learn more</button>
+      </div>
+      <div class="service">
+        <span><i class="fa-brands fa-wordpress"></i></span>
+        <p>wordpress course for beginner to advanced.</p>
+        <button>learn more</button>
+      </div>
+      <div class="service">
+        <span><i class="fa-brands fa-bootstrap"></i></span>
+        <p>bootstrap course for beginner to advanced.</p>
+        <button>learn more</button>
+      </div>
+    </div>
+    <div class="btnn">
+      <button>show more</button>
+    </div>
+  </div>
+  <!-- end of service page  -->
+  <div class="contactcontainer">
+    
+  </div>
+
+
+
+  <!-- now add script part -->
+
+  <script>
+    const links = document.querySelector('.links');
+    const sp2 = document.querySelector('.sp2');
+    sp2.addEventListener('click',function(){
+      links.classList.toggle("show-links");
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.headerpart {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0px 1px 1px gray;
+}
+
+.logo img {
+    height: 20px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.leftpart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+
+}
+
+.leftpart ul {
+    display: flex;
+    align-items: center;
+    gap: 1.4em;
+    list-style: none;
+    margin-left: 1em;
+    justify-content: space-between;
+}
+
+.leftpart ul li a {
+    font-size: 0.8em;
+    padding: 0.2em 0em;
+    color: rgb(112, 108, 108);
+    text-decoration: none;
+}
+
+.leftpart ul li a:hover {
+    border-bottom: 2px solid black;
+    transition: 0.5s;
+}
+
+.rightpart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.rightpart ul {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    justify-content: space-around;
+}
+
+.rightpart ul li {
+    list-style: none;
+}
+
+.rightpart ul li a {
+    font-size: 0.8em;
+    padding: 0.2em 0em;
+    color: rgb(112, 108, 108);
+    text-decoration: none;
+    align-self: flex-start;
+    list-style: none;
+}
+
+ul li a i {
+    font-size: 1em;
+    margin: 0em 1em;
+    color: gray;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid black;
+    transition: 0.5s;
+}
+
+.sign li {
+    list-style: none;
+}
+
+.sign li a {
+    list-style: none;
+    text-decoration: none;
+    color: gray;
+}
+
+.sign li a i {
+    padding: 0em 1em;
+    font-size: 1.2em;
+    color: gray;
+}
+
+/* now add container part or main content part */
+.container {
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(238, 242, 242);
+
+}
+
+.leftconntent {
+    order: 2;
+}
+
+.leftconntent img {
+    height: 300px;
+    width: 400px;
+    object-fit: fit;
+    background-color: transparent;
+}
+
+.rightcontent {
+    width: 400px;
+    height: auto;
+    padding: 1em 0.3em;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+.rightcontent h3 {
+    background-color: yellow;
+    width: fit-content;
+    padding: 0.2em 0.8em;
+    margin: 0.3em 0em;
+}
+
+.rightcontent h2 {
+    font-size: 1.9em;
+    margin: 0.3em 0em;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightcontent p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0.3em 0em;
+}
+
+.rightcontent button {
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+
+}
+
+/* end of main content part */
+/* noW add cardconent part */
+.smallcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.cardcontainer {
+    min-height: 700px;
+    width: 100%;
+    background-color: white;
+    text-transform: capitalize;
+    position: relative;
+    margin: 1em 0em;
+}
+
+.smallcardcontainer {
+    padding: 15px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 3em 0em;
+}
+
+.smallcard a {
+    margin: 0.6em 0em;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.bigcardcontainer {
+    padding: 15px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.bigcard {
+    width: 370px;
+    min-height: 400px;
+    line-height: 30px;
+    position: relative;
+    margin: 2em 0em;
+    background-color: white;
+    /* box-shadow: 0px 0px 4px 3px rgb(235, 234, 233); */
+}
+
+.bigcard img {
+    width: 100%;
+}
+
+.bigcard button {
+    background-color: transparent;
+    border: none;
+    color: blue;
+    margin: 0.4em 0em;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.bigcard h2 {
+    font-size: 2em;
+    margin: 0.3em 0em;
+}
+
+.bigcard p {
+    font-size: 1em;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin: 0.3em 0em;
+}
+
+/* end of cardcontent part */
+/* add microsoft edge image style */
+.edgepart {
+    min-height: 570px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edgeimage {
+    padding: 15px 4%;
+    flex-basis: 90%;
+
+}
+
+.edgeimage img {
+    width: 100%;
+    height: 570px;
+    object-fit: fill;
+}
+
+.edgecard {
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    color: black;
+    text-transform: capitalize;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.3em 1em;
+    gap: 2em;
+}
+
+.edgecard h2 {
+    text-transform: capitalize;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.edgecard p {
+    line-height: 29px;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.edgecard button {
+    padding: 0.9em 2em;
+    background-color: blue;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+
+}
+
+.edgecard button:hover {
+    background-color: rgb(31, 31, 131);
+    color: rgb(232, 228, 228);
+}
+
+/* end of microsoft edge image style */
+/* add social icon */
+.socialicon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.8em 0em;
+}
+
+.follow a i {
+    color: black;
+    margin: 0em 0.3em;
+    font-size: 2em;
+}
+
+.follow a i:hover {
+    color: gray;
+    transition: 0.5s;
+}
+
+.text h2 {
+    padding: 0.4em 1em;
+    background-color: gray;
+    color: white;
+}
+
+/* end of social icon */
+/* now add footer style part */
+.footer {
+    min-height: 400px;
+    width: 100%;
+    background-color: aliceblue;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.footerbox {
+    padding: 16px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 400px;
+    gap: 1.3em;
+}
+
+.footerbox .first,
+.second,
+.third,
+.fourth,
+.five {
+    height: auto;
+    width: 200px;
+}
+
+.footerbox a {
+    display: block;
+    text-decoration: none;
+    font-size: 0.7em;
+    margin-top: 1.4em;
+    color: gray;
+}
+
+.footerbox a:hover {
+    color: rgb(50, 49, 49);
+    transform: rotate(0.3deg)
+}
+
+.lastpart {
+    min-height: 100px;
+    width: 100%;
+    background-color: rgb(32, 81, 81);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.row a {
+    text-decoration: none;
+    font-size: 0.8em;
+    display: inline-block;
+    margin: 0em 1em;
+    color: rgb(251, 245, 245);
+}
+
+/* now end of footer style part  */
