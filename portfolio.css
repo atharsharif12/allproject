@@ -115,6 +115,30 @@ nav{
  #home{
     text-align: center;
  }
+ .contactcontainer{
+    flex-direction: column;
+ }
+ .contactcontainer .formss{
+    flex-basis: 100%;
+ }
+ .contactcontainer .location iframe{
+    flex-basis: 100%;
+    
+ }
+ .righthome img{
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+ }
+ .projectpart .projectcard iframe{
+    width: 300px;
+    height: 260px;
+ }
+ .rightabout img{
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+ }
 }
 
 
@@ -151,13 +175,25 @@ width: 340px;
     text-transform: uppercase;
 }
 .lefthome h2{
-    font-size: 1.5em;
-    margin: 0.5em 0em;
+    font-size: 1.7em;
+    margin: 0.6em 0em;
     color:yellow;
+    font-weight: 500;
 }
 .lefthome h3{
     font-size: 1.7em;
     font-family:'Courier New', Courier, monospace;
+    margin: 0.3em 0em;
+}
+.lefthome p{
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+.rightabout img{
+    border-radius: 10px;
+}
+.righthome  img{
+    border-radius: 10px;
 }
 #about{
     min-height: 600px;
@@ -181,7 +217,7 @@ align-items: center;
     margin: 0.5em 0em;
     line-height: 30px;
     font-weight: 500;
-    font-size: 1.9em;
+    font-size: 2.1em;
 }
 .leftabout p{
     margin: 0.5em 0em;
@@ -342,7 +378,7 @@ width: 260px;
 text-align: center;
 background-color: black;
 height: 150px;
-margin:0.5em 0em;
+margin:0em 0em;
 color: white;
 display: flex;
 flex-direction: column;
@@ -401,4 +437,150 @@ cursor: pointer;
     color: rgb(252, 250, 250);
 }
 
-/* end of service style part  */
+/* now add contact section */
+#contact{
+    min-height: 500px;
+    width: 100%;
+    padding: 3em 0em;
+    position: relative;
+    background-color: azure;
+}
+.contactcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 0px 10%;
+}
+.location{
+    flex-basis: 35%;
+    position: relative;
+}
+.location iframe{
+    width: 100%;
+    
+}
+.formss{
+    flex-basis: 55%;
+    position: relative;
+    
+}
+.formss input{
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 1em 0.8em;
+    font-size: 1em;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(231, 225, 225);
+    border: none;
+}
+.formss input:focus{
+    border: 1px solid blue;
+    background-color: aliceblue;
+}
+.formss label{
+    text-transform: capitalize;
+   font-weight: 700;
+   font-family: sans-serif;
+}
+.formss input[type="button"]{
+  
+    width: 200px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: rgb(1, 60, 9);
+    color: rgb(160, 158, 158);
+ 
+} 
+.formss h3{
+    margin: 0.8em 0em;
+    font-family: serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #ff004f;
+}
+.formss h3 span{
+    color: blue;
+}
+.formss h3::selection{
+   background-color: rgb(0, 0, 0);
+}
+.formss input[type="button"]:hover{
+    background-color:rgb(1, 81, 1);
+    color: white;
+} 
+.socialid a i{
+    margin: 0.8em 0.3em;
+    /* background-color: green; */
+    color: rgb(10, 0, 10);
+    font-size: 2em;
+}
+.socialid a i:hover{
+    color: #ff004f;
+    transition: 0.3s;
+}
+/* now add footer style */
+.footers{
+    min-height: 200px;
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+    color: white;   
+}
+.footerinfo{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 200px;
+    flex-wrap: wrap;
+}
+
+.ul2 li{
+    
+        list-style-type: none;
+        text-transform: capitalize;
+        margin: 0.5em 0em;
+        width: fit-content;
+        border-bottom: 1px solid cyan;
+    
+}
+.ul2 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.ul2 li a:hover{
+    color: gray;
+}
+.social a{
+    text-decoration: none;
+    padding: 0.2em 0em;
+}
+.social a i{
+    font-size: 2em;
+    color: rgb(223, 220, 220);
+    margin: 0em 0.1em;
+}
+.social a i:hover{
+    color: rgb(73, 128, 0);
+}
+.copyright{
+    
+    padding: 2em 0em;
+    text-align: center;
+    border-top: 4px solid rgb(72, 71, 71);
+    background-color: black;
+    color: white;
+}
+.copyright h2{
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: serif;
+}
