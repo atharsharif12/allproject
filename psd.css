@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+#hero{
+    min-height: 100vh;
+    width: 100%;
+    position: relative; 
+    background-image: url(image/photo-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.layer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+     
+}
+.navbar{
+    z-index: 1;
+    position: absolute;
+    padding: 15px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+}
+.links li{
+    display: inline-block;
+    margin-right: 40px;
+    list-style: none;
+}
+.links li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(11, 10, 10);
+    font-size: 1.4em;
+    font-weight: 500;
+    border-bottom: 3px solid rgb(246, 245, 243);
+}
+.links li a:hover{
+    color: cyan;
+    border-color: pink;
+    transition: 0.4s;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 11;
+}
+.text h1{
+    font-size: 4em;
+    font-weight: 600;
+    color: rgb(50, 49, 49);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.text h1 span{
+    color: rgb(11, 11, 32);
+}
+.sticynav{
+    display: flex;
+    align-items: center;
+    padding: 1.4em 0em;
+    justify-content: space-around;
+    background-color: rgb(215, 213, 213);
+}
+.sticylog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+.sticylog h1{
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(50, 49, 49);
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.sticylog h1 span{
+    color: rgb(11, 11, 32);
+}
+#peak{
+    min-height: 670px;
+    width: 100%;
+    position: relative;
+    background-image: url(image/peak.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+   max-width: 900px;
+    margin: auto;
+    padding-top: 3em;
+}
+.container h1{
+    width: 100%;
+    font-size: 5em;
+    font-weight: 600;
+    color: rgb(77, 77, 77);
+}
+.container h1 span{
+   font-size: 0.3em;
+   text-transform: capitalize;
+   color: rgb(35, 35, 35);
+}
+.container p{
+    font-size: 1.3em;
+    line-height: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgb(1, 1, 1);
+    font-family: sans-serif;
+}
+.layercard{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(32, 53, 93, 0.5);
+     position: absolute;
+     bottom: 0px;
+     left: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 0.4em;
+     padding: 2em 0em;
+     z-index: 1;
+     flex-wrap: wrap;
+}
+.climb{
+height: 100%;
+position: relative;
+width: 100%;
+padding: 1em 0em;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.climbinfo{
+    width: 1000px;
+}
+.climbinfo h2{
+     font-size: 5em;
+     color: gray;
+     font-weight: 600;
+     font-family: sans-serif;
+}
+.climbinfo h2 span{
+    color: navy;
+    text-transform: capitalize;
+    font-size: 0.3em;
+}
+.climbinfo p{
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.reactangle{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em 0em;
+    background-image: url(image/Rectangle\ 21.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.option a:first-child{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-right: 3.5em;
+    background-color: gainsboro;
+    padding: 0.3em 0.1em;
+    color: blue;
+    border-bottom: 0.1em solid red;
+}
+.option a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-right: 3.5em;
+  border-bottom: 1px solid white;
+    padding: 0.3em 0.1em;
+    color: navy;
+ 
+}
+#imagebox{
+    min-height: 700px;
+    width: 100%;
+    position: relative;
+    background-image: url(image/photo4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card1{
+    min-height: 300px;
+    max-width: 400px;
+    background-color: rgba(214, 214, 214, 0.616);
+    display: flex;
+    gap: 1.3em;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+   padding: 0em 2.4em;
+   top: 30%;
+   left: 20%;
+   z-index: 1;
+   box-shadow: 0px 0px 5px 5px rgb(242, 244, 244);
+}
+.leftinfo h2{
+  color: blue;
+  font-size: 1.9em;
+  position: absolute;
+  top: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid green;
+  font-family: monospace;
+}
+.card1 p{
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: serif;
+}
+#footer{
+    height: 100%;
+    width: 100%;
+    padding: 1em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(29, 29, 89);
+}
+.leftfooter{
+    display: flex;
+    gap: 0.4em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.leftfooter h1{
+    font-size: 1.1em;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: rgb(123, 120, 120);
+}
+.leftfooter img{
+   opacity: 0.3;
+}
+.rightfooter p{
+    text-transform: capitalize;
+    font-size: 1.2em;
+    color: gray;
+    font-family: sans-serif;
+}

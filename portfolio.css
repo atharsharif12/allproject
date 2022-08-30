@@ -530,7 +530,8 @@ cursor: pointer;
     min-height: 200px;
     width: 100%;
     background-color: rgb(33, 33, 33);
-    color: white;   
+    color: white; 
+    padding: 2em 0em;  
 }
 .footerinfo{
     color: white;
