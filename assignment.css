@@ -205,27 +205,27 @@
 /* for responsive navbar */
 
 @media(max-width:900px){
-    .links .ullinks{
+     .links .ullinks{
         position: absolute;
-        height: 0px;
+        height: 400px;
         width: 100%;
         background-color: pink;
         top: 70px;
         left: 0px;
         z-index: 1;
-        flex-direction: column;
-        gap: 3.2em;
+        display: none;
         transition: 0.5s;
-        overflow: hidden;  
+
+    }
+    .links .ullinks li{
+        margin: 3em 0em;
     }
     #sp1{
         display: block;
     }
-    .links .active{
-        height: 400px;
-        overflow: visible;
-        transition: 0.5s;
+     .links .active{
        
+       display: block;
     }
     
     
