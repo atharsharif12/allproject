@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello world</title>
+</head>
+ <body> 
+<script>
+ // first discuss let const var keyword in javascript
+var a= 30;// golobal scope
+let ab = 30;
+function hello(){
+   a=40;
+   ab= 30;
+   console.log(a+ab); 
+}
+ hello();
+ let at = 20; 
+ function hello1(love){
+    if(true){
+        console.log("true");
+        at = 40;
+        console.log(at);
+    }
+   
+ }
+ hello1();
+  // constant example 
+
+  const ath = 40;
+  const bth = 50;
+  function atth(){
+    
+    console.log(`you can't assignment value to the constant ${ath}`);
+
+  }
+  atth();
+ 
+ 
+ 
+ // discuss template string
+  let firstname = "athar";
+  let lastname = "sharif";
+  let age = 22;
+  const display = ()=>{
+    console.log(`your firstname is ${firstname} and lastname is ${lastname}. your age is ${age}.`);
+  }
+  display();
+    const add = (a,b)=>{
+        console.log(a+b);
+    }
+    add(34,45);
+    console.log("hellow")
+   
+
+
+
+
+    // arrow function
+     // normal function declare
+     function normalfun(){
+        let num1 = 30;
+        let num2 = 40;
+        if(num1>num2){
+            conosle.log(`means ${num1} is smaller than ${num2}`);
+        }
+        else{
+            console.log(`means ${num2} is greater than ${num1}`);
+        }
+     }
+     normalfun();
+ // now do this arrow function
+
+const normal = ()=>{
+    let ab = 40;
+    let ac = 60;
+    if(ab>ac){
+        conosle.log(`means ${ab} is smaller than ${ac}`);   
+    }
+    else{
+        console.log(`means ${ac} is greater than ${ab}`);
+    }
+}
+normal();
+    // array destructuring
+const array = ["athar","suraj","manish","rajnesh","kumar"];
+let firstelement = array[0];
+console.log(`${firstelement}`);
+console.log(array.length)
+
+const[top1,,,,top5] = array;
+console.log(...array);
+
+function spreadop(...ar){
+ 
+  
+}
+spreadop(4,5,6,7,9,6,6,7,5,9,0,5,8);
+
+
+    // object desctructing
+    // 
+let dataset = [
+{
+    name: "athar",
+    age: 21,
+    age1: 24
+},
+{
+    name: "sharif",
+    age: 24,
+    age1: 24,
+},
+{
+    name: "kumar",
+    age: 25,
+    age1: 24,
+},
+{
+    name: "adarsh",
+    age: 34,
+    age1: 24,
+}
+
+]
+let randomnumber = 0;
+dataset.forEach(function(item){
+
+});
+
+
+
+</script>
+</body>
+</html>

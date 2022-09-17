@@ -11,6 +11,128 @@
 </head>
 
 <body>
+    <!-- now create responsive navbar for mobile -->
+    <div class="skipnav">
+        <div class="icons">
+            <span>&#9776;</span>
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            
+        </div>
+        <div class="logo1">
+            <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+            alt="">  
+        </div>
+        <div class="infosign">
+         <!-- <i class="fa-solid fa-angle-down"></i> -->
+          <a href=""><i class="fa-solid fa-cart-arrow-down"></i></a>
+          <a href=""><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+    <!-- now create link for menu -->
+    <div class="menubar">
+        <ul class="menulinks">
+         <li><a href="">microsoft</a></li>
+         <li><a href="">teams</a></li>
+         <li><a href="">windows</a></li>
+         <li><a href="">surface</a></li>
+         <li><a href="">xbos</a></li>
+         <li><a href="">support</a></li>
+         <div class="showhide">
+         <li class="extraadd"><a href="">software</a>
+          <span  class="ap1"> <i class="fa-solid fa-angle-down"></i></span>
+        </li>
+         <div class="extralinkmenu">
+            <ul>
+                <li><a href="">windows app</a></li>
+                <li><a href="">one drive</a></li>
+                <li><a href="">outlook</a></li>
+                <li><a href="">skype</a></li>
+                <li><a href="">onenote</a></li>
+                <li><a href="">microsoft</a></li>
+            </ul>
+         </div>
+         <div class="showhide">
+         <li class="extraadd"><a href="">pcs & devices</a>
+            <span class="ap1"> <i class="fa-solid fa-angle-down"></i></span></li>
+            <div class="extralinkmenu">
+                <ul>
+                    <li><a href="">snop</a></li>
+                    <li><a href="">accessories</a></li>
+                    <li><a href="">xbox</a></li>
+                    
+                </ul>
+             </div>
+        </div>
+            <div class="showhide">
+         <li class="extraadd"><a href="">entertainment</a>
+            <span class="ap1"> <i class="fa-solid fa-angle-down"></i></span></li>
+            <div class="extralinkmenu">
+                <ul>
+                    <li><a href="">xbox game pass ultimate</a></li>
+                    <li><a href="">xbox live gold</a></li>
+                    <li><a href="">xbox games</a></li>
+                    <li><a href="">pc games</a></li>
+                    <li><a href="">windows digital games</a></li>   
+                </ul>
+             </div>    
+        </div>
+            <div class="showhide">
+         <li class="extraadd"><a href="">business</a>
+            <span> <i class="fa-solid fa-angle-down"></i></span></li>
+            <div class="extralinkmenu">
+                <ul>
+                    <li><a href="">microsoft cloud</a></li>
+                    <li><a href="">microsoft security</a></li>
+                    <li><a href="">azure</a></li>
+                    <li><a href="">dynamics 365</a></li>
+                    <li><a href="">microsoft 365 for business</a></li>   
+                    <li><a href="">microsoft industry</a></li>   
+                    <li><a href="">microsoft power platform</a></li>   
+                    <li><a href="">windows 365</a></li>   
+                </ul>
+             </div>     
+        </div>
+            <div class="showhide">
+         <li class="extraadd"><a href="">developers & it</a>
+            <span class="ap1"> <i class="fa-solid fa-angle-down"></i></span></li>
+              
+            <div class="extralinkmenu">
+                <ul>
+                    <li><a href="">developer center</a></li>
+                    <li><a href="">documentation</a></li>
+                    <li><a href="">microsoft learn</a></li>
+                    <li><a href="">microsoft tech community</a></li>
+                    <li><a href="">azure marketplace</a></li>   
+                    <li><a href="">appsource</a></li>   
+                    <li><a href="">visual studio</a></li>   
+                  
+                </ul>
+             </div> 
+        
+        </div>
+        <div class="showhide">
+         <li class="extraadd"><a href="">other</a>
+         <span class="ap1"> <i class="fa-solid fa-angle-down"></i></span>
+        </li>
+         </div>
+         <li><a href="">view sitemap</a></li>
+        
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- create header part  -->
     <div class="headerpart">
         <div class="leftpart">
@@ -252,7 +374,18 @@
 
     <!-- end of footer part -->
 
+<!-- let add script part -->
+<script>
 
+const ap1 = document.querySelectorAll('ap1');
+ap1.forEach(function(items){
+    items.addEventListener('click',function(e){
+     console.log();
+    })
+
+    }
+)
+</script>
 </body>
 
 </html>

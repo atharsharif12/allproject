@@ -7,6 +7,79 @@
 button {
     cursor: pointer;
 }
+/* now add for responsive navbar for mobile */
+.skipnav{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0px 1px 1px gray;
+    display: none;
+}
+.logo1 img{
+    height: 20px;
+    width: 100px;
+    object-fit: cover;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    height: 100%;
+    align-items: center;
+}
+.icons span{
+    font-size: 2em;
+    border: 2px solid gray;
+    background-color: white;
+    padding: 0em 0.2em;
+    cursor: pointer;
+}
+.icons span:hover{
+    color: gray;
+    background-color: rgb(242, 241, 239);
+}
+.icons a i{
+    font-size: 1.3em;
+    display: flex;
+    width: 90px;
+    color: gray;
+    align-items: center;
+
+}
+.icons a i:hover{
+    color: black;
+    transition: 0.5s;
+}
+.icons a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.infosign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.infosign a:last-child{
+    font-size: 2.1em;
+    color: gray;
+    padding: 0.2em 0.3em;
+    cursor: pointer;
+    border: 1px solid rgb(238, 237, 237);
+}
+.infosign a:last-child:hover{
+    color: black;
+    border: 2px solid cyan;
+    transition: 0.5s;
+}
+/* now add media query for navbar */
 
 .headerpart {
     position: relative;
@@ -109,6 +182,69 @@ ul li a:hover {
     padding: 0em 1em;
     font-size: 1.2em;
     color: gray;
+}
+/* now add menu bar */
+.menubar{
+    position: absolute;
+    min-height: 600px;
+    width: 100%;
+    top: 60px;
+    left: 0px;
+    background-color: rgb(240, 236, 236);
+    z-index: 1;
+}
+.menulinks li{
+    display: block;
+    margin-top: 3em;
+    padding: 0.3em 0em;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgb(219, 215, 215);
+    
+}
+.menulinks li a{
+    text-decoration: none;
+    font-size: 1.1em;
+     color: black;
+     /* border-bottom: 2px solid whitesmoke; */
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-family: sans-serif;
+
+}
+.menulinks .extraadd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menulinks .extraadd span i{
+    color: gray;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+.showhide{
+  height: 100%;
+  width: 100%;
+  position: relative; 
+}
+.extralinkmenu{
+    display: none;
+}
+
+
+
+/* now add media query */
+@media(max-width:1090px){
+    .headerpart{
+        display: none;
+    }
+    .skipnav{
+        display: flex;
+    }
 }
 
 /* now add container part or main content part */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home selfie</title>
+    <link rel="stylesheet" href="assignment.css">
+    <link rel="icon" type="favicon" href="image/home-selfie.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+</head>
+<body>
+    <!-- navbar code -->
+
+  <div class="navbar">
+    <div class="navinfo">
+   <div class="logo"><h2>HF</h2></div> 
+   <span id="sp1">&#9776;</span>
+   <div class="links">
+    <ul class="ullinks">
+        <li>
+            <i class="fa-solid fa-video"></i>     
+     <a href="">live</a>
+    </li>
+        <li>
+            <i class="fa-solid fa-memory"></i>   
+        <a href="">memberships</a>
+    </li>
+        
+        <li>
+            <i class="fa-solid fa-landmark"></i>
+        <a href="">plans</a>
+      </li>
+        <li>
+            <i class="fa-solid fa-earth-americas"></i>
+            <a href="">more</a>
+        </li>
+    </ul>
+   </div>
+   <div class="loginbtn">
+    <a href=""><span><i class="fa-solid fa-user"></i></span> login</a>
+   </div>
+  </div> 
+  </div>   
+
+<!-- container html code -->
+<div class="container">
+   <h1 style="position:absolute; top: 120px; left:5%;">Runner's workout</h1>
+  <div class="imagbox">
+    <div class="first">
+     <h3 style="position:absolute;color:white;top: 30px;left:20px;">STRENGTH</h3>
+        <img src="image/run (1).jpg" alt="" class="img1">
+        <i class="fa-solid fa-angle-down"></i>
+    </div>
+    <div class="second">
+        <h3 style="position:absolute; color:white;top: 30px;left:20px;">MOBILITY</h3>   
+    <img src="image/run (2).jpg" alt="" class="img2">
+    <i class="fa-solid fa-angle-down"></i>
+    </div>
+    <div class="third">
+        <h3 style="position:absolute;color: white;top:30px;left:20px;">DRILLS</h3>   
+    <img src="image/run (3).jpg" alt="" class="img3">
+    <i class="fa-solid fa-angle-down"></i>
+    </div>
+  </div> 
+</div>
+
+
+
+<!-- add script part  -->
+
+<script>
+    const ullinks = document.querySelector('.ullinks');
+    const sp1 = document.getElementById('sp1');
+    sp1.addEventListener('click',function(){
+       ullinks.classList.toggle('active'); 
+       sp1.style.border='1px solid green';
+    })
+
+</script>
+</body>
+</html>
