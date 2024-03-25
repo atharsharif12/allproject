@@ -8,13 +8,14 @@
     <title>microsoft colone using html css and javascripts</title>
     <link rel="stylesheet" href="microsoft.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <script src="microsoft.js"></script>
 </head>
 
 <body>
     <!-- now create responsive navbar for mobile -->
     <div class="skipnav">
         <div class="icons">
-            <span>&#9776;</span>
+            <span id="menubtn">&#9776;</span>
             <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
             
         </div>
@@ -54,7 +55,7 @@
          </div>
          <div class="showhide">
          <li class="extraadd"><a href="">pcs & devices</a>
-            <span class="ap1"> <i class="fa-solid fa-angle-down"></i></span></li>
+            <span class="ap1"><i class="fa-solid fa-angle-down"></i></span></li>
             <div class="extralinkmenu">
                 <ul>
                     <li><a href="">snop</a></li>
@@ -78,8 +79,8 @@
              </div>    
         </div>
             <div class="showhide">
-         <li class="extraadd"><a href="">business</a>
-            <span> <i class="fa-solid fa-angle-down"></i></span></li>
+         <li class="extraadd">
+            <a href="">business</a><span> <i class="fa-solid fa-angle-down" id="sp2"></i></span></li>
             <div class="extralinkmenu">
                 <ul>
                     <li><a href="">microsoft cloud</a></li>
@@ -375,17 +376,7 @@
     <!-- end of footer part -->
 
 <!-- let add script part -->
-<script>
 
-const ap1 = document.querySelectorAll('ap1');
-ap1.forEach(function(items){
-    items.addEventListener('click',function(e){
-     console.log();
-    })
-
-    }
-)
-</script>
 </body>
 
 </html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.navar{
+    
+    height: fit-content;
+    width: 100%;
+    background-color: rgba(345, 234, 123, 0.9);
+    display: flex;
+    align-items: center;
+    padding: 12px 0px;
+    justify-content: space-around;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 3px 4px red;
+}
+.left{
+    height: 100%;
+    width: fit-content;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 2px 3px cyan;
+    font-size: 1.4em;
+    word-spacing: 3px;
+    text-transform: capitalize;
+    z-index: 1;
+    background-color: cyan;
+    color: blue;
+    padding: 0.6px;
+    font-family: sans-serif;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid rgb(4, 65, 103);
+}
+.left:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s all;
+    border: none;
+    box-shadow: inset;
+}
+.right{
+   
+    position: relative;
+    order: 1;
+}
+.links li{
+    display: inline-block;
+    margin: 0em 0.5em;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: sans-serif;
+    border-bottom: 2px solid cyan;
+    letter-spacing: 0.2px;
+    padding-bottom: 0.1em;
+    cursor: pointer;
+}
+.links li:hover{
+    border-bottom:2px solid blue;
+    transition: 0.5s all;
+    color: gray;
+}
+/* now add style content part */
+.content{
+    min-height: 680px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+     align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(rgb(84, 38, 45),rgb(11, 25, 25));
+}
+.leftcontent{
+    flex-basis: 55%;
+    height: 100%;
+    padding: 0.4em 0em;
+    position: relative;
+}
+.leftcontent p{
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size:1.5em;
+    line-height: 39px;
+    margin: 0.9em 0em;
+    
+}
+.forms{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.forms input[type=button]{
+    padding: 0.4em 0.6em;
+    border-radius: 3px;
+    background-color: rgb(186, 5, 5);
+    font-size: 1.3em;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+.forms input{
+    padding: 0.6em 2em;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+}
+.forms input:hover{
+    border: none;
+    outline: none;
+}
+.forms input::placeholder{
+    text-transform: capitalize;
+}
+.rigthcontent img{
+height: 400px;
+width: 400px;
+}

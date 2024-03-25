@@ -40,7 +40,7 @@ button {
     background-color: white;
     padding: 0em 0.2em;
     cursor: pointer;
-}
+}           
 .icons span:hover{
     color: gray;
     background-color: rgb(242, 241, 239);
@@ -190,9 +190,11 @@ ul li a:hover {
     width: 100%;
     top: 60px;
     left: 0px;
-    background-color: rgb(240, 236, 236);
+   background-color: red; 
     z-index: 1;
+    display:none;
 }
+
 .menulinks li{
     display: block;
     margin-top: 3em;
@@ -232,7 +234,7 @@ ul li a:hover {
   position: relative; 
 }
 .extralinkmenu{
-    display: none;
+   
 }
 
 
